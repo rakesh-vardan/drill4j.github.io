@@ -4,7 +4,7 @@ title: Contacts
 permalink: /contacts/
 ---
 
-If you have any question, don't hesitate to contact:
+### If you have any question, don't hesitate to contact:
 
 <Igor_Kuzminykh@epam.com> - Project architect
 

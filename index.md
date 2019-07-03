@@ -13,8 +13,9 @@ shows which test case trigger which methods in-app code, and vice versa. ​
 ## Test results visualization
 Simplify code analysis and testing process
 
-> _**3 easy steps** to get started with Drill4J_
+***  
 
+# How to start
 
 ![image](/assets/img/install-drill-step1.png)
 
@@ -30,42 +31,46 @@ Download and install Docker (Docker Engine, Compose, etc)
 
 **IMPORTANT** If you use Docker for Windows or MacOS, make sure there is at least 3gb dedicated for Docker. 
     
-## Run Drill4J
-
-![image](/assets/img/install-drill-step2.png)
-
 ## Run Drill4J backend
-Install JDK 8. Installation path should NOT have space characters.
+> Install **JDK 8**. Installation path should **NOT** have space characters.
 
 
 Open CMD and enter commands:
 
-     git clone https://github.com/Drill4J/Drill4J.git
-
-     cd <path_to_the_project_folder>\docker-compose
-
-    ./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild
-
-     cd <path_to_the_project_folder>\drill-admin
-
-     docker-compose up -d
-
+```console
+git clone https://github.com/Drill4J/Drill4J.git
+```
+```console
+cd {path_to_the_project_folder}/docker-compose
+```
+```console
+./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild
+```
+```console
+cd {path_to_the_project_folder}/drill-admin
+```
+```console
+docker-compose up -d
+```
 ## Run Dril4J frontend
 Open CMD and enter commands:
+```console
+git clone https://github.com/Drill4J/admin-ui.git 
+```
+```console
+cd {path_to_the_project_folder}/docker-compose
+```
+```console    
+./buildup.sh
+```
 
-     git clone https://github.com/Drill4J/admin-ui.git 
-
-     cd <path_to_the_folder>\docker-compose
-    
-     ./buildup.sh
-
-
-Install Drill4J extension for chrome
+_Install Drill4J extension for chrome_
+Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
 
 ## Open Drill4J
-Open new browser tab with Drill4J
+Open new browser tab with [Drill4J](http://localhost:9090)
 
 Drill4J is ready for login. Press Continue as a guest button to get access. 
 
-If you deploy Drill4J on a separate host, use http://IP_ADDRESS:9090.
+If you deploy Drill4J on a separate host, use [http://IP_ADDRESS:9090](http://IP_ADDRESS:9090)
 
