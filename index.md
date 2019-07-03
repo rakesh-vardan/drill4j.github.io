@@ -4,10 +4,10 @@ title: Welcome to Drill4J
 ---
 ![image](/assets/img/drill-logo.png)
 
-**Drill4J** is the tool for real-time application profiling that doesn’t affect codebase. Provide the ability to make white box functional testing, via access to access to application instructions and memory.
+**Drill4J** is the tool for real-time application profiling that doesn’t affect codebase. Provide the ability to make white box functional testing, via access to application instructions and memory.
 
 ## Measure code coverage 
-via any types of tests (manual, automated, integration, performance, etc.)​
+by any types of tests (manual, automated, integration, performance, etc.)​
 ## Build Code to Test mapping
 shows which test case trigger which methods in-app code, and vice versa. ​
 ## Test results visualization
@@ -27,9 +27,10 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 >Note: for Windows users. Docker for Windows requires 64-bit Windows 10 Pro and Microsoft Hyper-V. 
 If your system does not satisfy these requirements, you can install Docker Toolbox, which uses Oracle Virtual Box instead of Hyper-V.
 
-Download and install Docker (Docker Engine, Compose, etc)
+[Download](https://www.docker.com/community-edition) and install Docker (Docker Engine, Compose, etc) 
 
-**IMPORTANT** If you use Docker for Windows or MacOS, make sure there is at least 3gb dedicated for Docker. 
+
+**IMPORTANT** Allocate at least 3+Gb of RAM for Docker via Docker Settings > Advanced. 
     
 ## Run Drill4J backend
 > Install **JDK 8**. Installation path should **NOT** have space characters.
