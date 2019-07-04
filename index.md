@@ -42,7 +42,7 @@ Open CMD and enter commands:
 git clone https://github.com/Drill4J/Drill4J.git
 ```
 ```console
-cd {path_to_the_project_folder}/docker-compose
+cd {path_to_the_project_folder}
 ```
 ```console
 ./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild
@@ -59,7 +59,7 @@ Open CMD and enter commands:
 git clone https://github.com/Drill4J/admin-ui.git 
 ```
 ```console
-cd {path_to_the_project_folder}/docker-compose
+cd {path_to_the_project_folder}
 ```
 ```console    
 ./buildup.sh
