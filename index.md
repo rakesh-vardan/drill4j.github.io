@@ -34,7 +34,7 @@ If your system does not satisfy these requirements, you can install Docker Tool
 
 ## 2. Configure and deploy Drill4J with Docker-Compose file
 
-[![image](/assets/img/install-drill-step2.png)](https://github.com/Drill4J/drill4j.github.io/blob/pages/master/assets/files/docker-compose.yml)
+[![image](/assets/img/install-drill-step2.png)](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
 
 Start Drill4J using the following command and wait a bit
 ```console
