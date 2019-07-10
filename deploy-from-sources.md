@@ -1,10 +1,10 @@
 ---
 layout: page
-title:
+title: Deploy from source code
 permalink: /deploy-from-sources/
 ---
 
-## Run Drill4J backend
+### Run Drill4J backend
 
 > Install **JDK 8**. Installation path should **NOT** have space characters.
 
@@ -25,7 +25,7 @@ cd {path_to_the_project_folder}/drill-admin
 ```console
 docker-compose up -d
 ```
-## Run Dril4J frontend
+### Run Dril4J frontend
 Open CMD and enter commands:
 ```console
 git clone https://github.com/Drill4J/admin-ui.git 
