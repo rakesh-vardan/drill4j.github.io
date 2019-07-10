@@ -19,7 +19,7 @@ Simplify code analysis and testing process
 
 ![image](/assets/img/install-drill-step1.png)
 
-## Install docker 
+## 1. Install docker 
 > _Whether you have Docker please skip this step_
 
 Docker is supported by all major Linux distributions, MacOS and Windows.
@@ -31,47 +31,25 @@ If your system does not satisfy these requirements, you can install Docker Tool
 
 
 **IMPORTANT** Allocate at least 3+Gb of RAM for Docker via Docker Settings > Advanced. 
-    
-## Run Drill4J backend
-> Install **JDK 8**. Installation path should **NOT** have space characters.
 
+## 2. Configure and deploy Drill4J with Docker-Compose file
 
-Open CMD and enter commands:
+[![image](/assets/img/install-drill-step2.png)](/assets/files/docker-compose.yml)
 
+Start Drill4J using the following command and wait a bit
 ```console
-git clone https://github.com/Drill4J/Drill4J.git
-```
-```console
-cd {path_to_the_project_folder}
-```
-```console
-./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild
-```
-```console
-cd {path_to_the_project_folder}/drill-admin
-```
-```console
-docker-compose up -d
-```
-## Run Dril4J frontend
-Open CMD and enter commands:
-```console
-git clone https://github.com/Drill4J/admin-ui.git 
-```
-```console
-cd {path_to_the_project_folder}
-```
-```console    
-./buildup.sh
+docker-compose -p drill up -d --force-recreate
 ```
 
-_Install Drill4J extension for chrome_
-Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
-
-## Open Drill4J
+## 3. Open Drill4J
 Open new browser tab with [Drill4J](http://localhost:9090)
 
 Drill4J is ready for login. Press Continue as a guest button to get access. 
 
 If you deploy Drill4J on a separate host, use [http://IP_ADDRESS:9090](http://IP_ADDRESS:9090)
+
+_Install Drill4J extension for chrome_
+Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
+
+### You can also [deploy Drill4J from source code](/deploy-from-sources/)
 
