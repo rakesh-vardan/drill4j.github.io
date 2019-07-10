@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  drill-admin:
+    image: drill4j/drill-admin
+    ports:
+      - 8090:8090
+      - 5006:5006
+    networks:
+      - drill4j-dev-network
+    restart: always
+
+  admin-ui:
+    image: drill4j/admin-ui
+    ports:
+      - 9090:80
+    networks:
+      - drill4j-dev-network
+
+networks:
+  drill4j-dev-network:
+    external:
+      name: drill4j-dev-network
