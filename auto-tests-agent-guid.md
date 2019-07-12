@@ -22,10 +22,18 @@ git clone https://github.com/Drill4J/auto-tests-agent.git
 _Gradle_ (to test task):
 ```gradle
 dependsOn(jar)
-setJvmArgs(listOf("-javaagent:${jar.get().archivePath}=adminUrl=localhost:8090,agentId=Agent1"))
+val agentPath = System.getProperty("agentPath")
+val adminUrl = System.getProperty("admin.url")
+val adminId = System.getProperty("agent.id")
+setJvmArgs(listOf("-javaagent:$agentPath=adminUrl=$adminUrl,agentId=$adminId"))
 ```
 _Maven_ (to configuration):
 ```pom
+<systemPropertyVariables>
+    <propertyName>agentPath</propertyName>
+    <propertyName>admin.url</propertyName>
+    <propertyName>agent.id</propertyName>
+</systemPropertyVariables>
 <argLine>
    -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
    -javaagent:${agentPath}=adminUrl=${admin.url},agentId=${agent.id}
@@ -37,7 +45,7 @@ _Maven_ (to configuration):
 For example, if you use _gradle_ then command may be looks like:
 
 ```console
-./gradlew clean test
+./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=Agent1 -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
 ```
 ...or for _maven_:
 
