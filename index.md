@@ -48,8 +48,17 @@ Drill4J is ready for login. Press Continue as a guest button to get access. 
 
 If you deploy Drill4J on a separate host, use [http://IP_ADDRESS:9090](http://IP_ADDRESS:9090)
 
+
+### You can also [deploy Drill4J from source code](/deploy-from-sources/)
+
+***  
+
+# Drill for
+## ... manual tests
 _Install Drill4J extension for chrome_
 Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
 
-### You can also [deploy Drill4J from source code](/deploy-from-sources/)
+## ... api auto tests
+[_Install auto tests agent_](/auto-tests-agent-guid/)
+
 
