@@ -4,7 +4,7 @@ title: Autotests agent installation guidelines
 permalink: /auto-tests-agent-guid/
 ---
 
-For using Drill4J **Code coverage plugin** with api autotests (RESTful API) we need to add 
+For using Drill4J **Code coverage plugin** with api autotests (RESTful API) you need to add 
 special auto tests agent to your test automation framework.
 
 ### 1. Clone [auto-tests-agent](https://github.com/Drill4J/auto-tests-agent) project
@@ -42,12 +42,12 @@ _Maven_ (to configuration):
 
 ### 3. Run your auto tests with agent
 
-For example, if you use _gradle_ then command may be looks like:
+For example, if you use _Gradle_ then the command may be looks like:
 
 ```console
 ./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=Agent1 -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
 ```
-...or for _maven_:
+...or for _Maven_:
 
 ```console
 mvn clean test -Dadmin.url=localhost:8090 -Dagent.id=Agent1 -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
