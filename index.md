@@ -32,7 +32,7 @@ If your system does not satisfy these requirements, you can install Docker Tool
 
 **IMPORTANT** Allocate at least 3+Gb of RAM for Docker via Docker Settings > Advanced. 
 
-## 2. Configure and deploy Drill4J with Docker-Compose file
+## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
 [![image](/assets/img/install-drill-step2.png)](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
 
@@ -41,7 +41,23 @@ Start Drill4J using the following command and wait a bit
 docker-compose -p drill up -d --force-recreate
 ```
 
-## 3. Open Drill4J
+## 3. Run your JVM application with Drill Agent
+
+Download the archive [distr-0.1.9.zip](https://github.com/Drill4J/drill4j.github.io/files/3392139/distr-0.1.9.zip) with the agent distribution
+and extract files to the certain folder.
+
+>To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
+>Download jar file by the link below [spring-petclinic-kotlin-2.0.0.jar](/assets/files/spring-petclinic-kotlin-2.0.0.jar)
+>or use **your** project.
+
+
+Run the application with follow parameters:
+```console
+java -agentpath:{path_to_extracted_agent_folder}\drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar
+```
+> Use drill_agent.**dll** for Windows or drill_agent.**so** for Linux
+
+## 4. Open Drill4J
 Open new browser tab with [Drill4J](http://localhost:9090)
 
 Drill4J is ready for login. Press Continue as a guest button to get access. 
