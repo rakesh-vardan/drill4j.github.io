@@ -24,9 +24,6 @@ Simplify code analysis and testing process
 
 Docker is supported by all major Linux distributions, MacOS and Windows.
 
->Note: for Windows users. Docker for Windows requires 64-bit Windows 10 Pro and Microsoft Hyper-V. 
-If your system does not satisfy these requirements, you can install Docker Toolbox, which uses Oracle Virtual Box instead of Hyper-V.
-
 [Download](https://www.docker.com/community-edition) and install Docker (Docker Engine, Compose, etc) 
 
 
@@ -34,9 +31,11 @@ If your system does not satisfy these requirements, you can install Docker Tool
 
 ## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
-[![image](/assets/img/install-drill-step2.png)](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
+<p><a href="/assets/file/docker-compose.yml" download><img src="/assets/img/install-drill-step2.png" alt="image" /></a></p>
 
-Start Drill4J using the following command and wait a bit
+If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
+
+Start Drill4J using the following command and wait a bit.
 ```console
 docker-compose -p drill up -d --force-recreate
 ```
@@ -44,7 +43,7 @@ docker-compose -p drill up -d --force-recreate
 ## 3. Run your JVM application with Drill Agent
 
 Download the archive [distr-0.1.9.zip](https://github.com/Drill4J/drill4j.github.io/files/3392139/distr-0.1.9.zip) with the agent distribution
-and extract files to the certain folder.
+and extract files.
 
 >To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
 >Download jar file by the link below [spring-petclinic-kotlin-2.0.0.jar](/assets/files/spring-petclinic-kotlin-2.0.0.jar)
