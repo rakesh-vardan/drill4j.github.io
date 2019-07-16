@@ -14,8 +14,6 @@ permalink: /Wiki/
 
 [Contribute](https://contribute.epam.com/products/136)
 
-You can ask any questions in our [telegram chat](https://t.me/drill4j)
-
 # Drill4J browser extension
 Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
 
