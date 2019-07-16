@@ -57,23 +57,20 @@ java -agentpath:{path_to_extracted_agent_folder}\drill_agent.dll=drillInstallati
 > Use drill_agent.**dll** for Windows or drill_agent.**so** for Linux
 
 ## 4. Open Drill4J
-Open new browser tab with [Drill4J](http://localhost:9090)
+Open new browser tab with Drill Admin [localhost:9090](http://localhost:9090)
+>If you deploy Drill4J on a separate host, use [http://IP_ADDRESS:9090](http://IP_ADDRESS:9090) 
+ 
+Drill4J is ready for login. Press Continue as a guest button to get access.
 
-Drill4J is ready for login. Press Continue as a guest button to get access. 
+_You're breathtaking!_  
+The **last step** before you can start working with Drill4J.  
+Go to the [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and download the browser extension for manual testing.
+  
+### Open your application and start testing   
+> If you use PetClinic as an application you can find it here [localhost:8082](http://localhost:8082)
 
-If you deploy Drill4J on a separate host, use [http://IP_ADDRESS:9090](http://IP_ADDRESS:9090)
 
-
-### You can also [deploy Drill4J from source code](/deploy-from-sources/)
-
-***  
-
-# Drill for
-## ... manual tests
-_Install Drill4J extension for chrome_
-Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
-
-## ... api auto tests
-[_Install auto tests agent_](/auto-tests-agent-guid/)
+## Also, if you want to try auto tests, follow this instruction:
+[Install auto tests agent](/auto-tests-agent-guid/)
 
 
