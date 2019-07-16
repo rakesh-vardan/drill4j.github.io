@@ -5,6 +5,7 @@ permalink: /Wiki/
 ---
 
 # Useful links
+
 [JIRA](https://jiraeu.epam.com/projects/EPMDJ/summary)
 
 [Chat MS Teams](https://teams.microsoft.com/l/team/19%3a193e223ed7f7454ab21c44b0f607b02f%40thread.skype/conversations?groupId=8864428e-aa21-4db2-9010-e929b8ac92b3&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d)
@@ -12,6 +13,8 @@ permalink: /Wiki/
 [GitHub](https://github.com/Drill4J)
 
 [Contribute](https://contribute.epam.com/products/136)
+
+You can ask any questions in our [telegram chat](https://t.me/drill4j)
 
 # Drill4J browser extension
 Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
