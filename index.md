@@ -64,7 +64,7 @@ Drill4J is ready for login. Press Continue as a guest button to get access.
 
 _You're breathtaking!_  
 The **last step** before you can start working with Drill4J.  
-Go to the [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and download the browser extension for manual testing.
+Go to the [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
   
 ### Open your application and start testing   
 > If you use PetClinic as an application you can find it here [localhost:8082](http://localhost:8082)
