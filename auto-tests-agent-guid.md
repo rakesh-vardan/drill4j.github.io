@@ -21,7 +21,6 @@ git clone https://github.com/Drill4J/auto-tests-agent.git
 
 _Gradle_ (to test task):
 ```gradle
-dependsOn(jar)
 val agentPath = System.getProperty("agentPath")
 val adminUrl = System.getProperty("admin.url")
 val adminId = System.getProperty("agent.id")
@@ -45,14 +44,13 @@ _Maven_ (to configuration):
 For example, if you use _Gradle_ then the command may be looks like:
 
 ```console
-./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=Agent1 -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
+./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=MyIncredibleAgent -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
 ```
 ...or for _Maven_:
 
 ```console
-mvn clean test -Dadmin.url=localhost:8090 -Dagent.id=Agent1 -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
+mvn clean test -Dadmin.url=localhost:8090 -Dagent.id=MyIncredibleAgent -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar
 ```
 ...where **admin.url** is a url of your _Drill Admin_, **agent.id** is _ID_ of _Drill Agent_ and **agentPath** is a path to
  **jar** file of the agent (we built this jar in _step 1_)
  
-
