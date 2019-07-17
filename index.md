@@ -19,6 +19,8 @@ Simplify code analysis and testing process
 
 ![image](/assets/img/install-drill-step1.png)
 
+{% include youtubePlayer.html id='hsr3sDwua40' %}
+
 ## 1. Install docker 
 > _Whether you have Docker please skip this step_
 
@@ -71,6 +73,6 @@ Go to the [link](https://chrome.google.com/webstore/detail/drill4j-browser-exten
 
 
 ## Also, if you want to try auto tests, follow this instruction:
-[Install auto tests agent](/auto-tests-agent-guid/)
+[Install auto tests agent](/auto-tests-agent-guide/)
 
 

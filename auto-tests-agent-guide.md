@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Autotests agent installation guidelines
-permalink: /auto-tests-agent-guid/
+permalink: /auto-tests-agent-guide/
 ---
 
 For using Drill4J **Code coverage plugin** with api autotests (RESTful API) you need to add 
