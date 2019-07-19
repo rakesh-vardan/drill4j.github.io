@@ -17,7 +17,8 @@ git clone https://github.com/Drill4J/Drill4J.git
 cd {path_to_the_project_folder}
 ```
 ```console
-./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild
+./gradlew --no-daemon cleanDistr :plugins:drill-coverage-plugin:buildToDistr :plugins:drill-exception-plugin:buildToDistr :drill-admin:jibDockerBuild  
+
 ```
 ```console
 cd {path_to_the_project_folder}/drill-admin
