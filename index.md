@@ -2,8 +2,6 @@
 layout: home
 title: Welcome to Drill4J 
 ---
-![image](/assets/img/drill-logo.png)
-
 **Drill4J** is the tool for real-time application profiling that doesn’t affect codebase. Provide the ability to make white box functional testing, via access to application instructions and memory.
 
 ## Measure code coverage 
