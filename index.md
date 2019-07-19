@@ -39,7 +39,9 @@ If you want to write a docker compose manually, you can use the latest compose d
 
 Start Drill4J using the following command and wait a bit.
 ```console
+
 docker-compose -p drill up -d --force-recreate
+
 ```
 
 ## 3. Run your JVM application with Drill Agent
@@ -54,6 +56,7 @@ and extract files.
 
 Run the application with follow parameters:
 ```console
+
 java -agentpath:{path_to_extracted_agent_folder}\drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
 
 ```
