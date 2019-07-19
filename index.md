@@ -17,7 +17,7 @@ Simplify code analysis and testing process
 
 # How to start
 
-![image](/assets/img/install-drill-step1.png)
+![image](/assets/img/d4j_img_install_steps.png)
 
 {% include youtubePlayer.html id='hsr3sDwua40' %}
 
@@ -33,7 +33,9 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 
 ## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
-<p><a href="/assets/files/docker-compose.yml" download><img src="/assets/img/install-drill-step2.png" alt="image" /></a></p>
+![image](/assets/img/d4j_img_download_docker_1.png)
+<p><a href="/assets/files/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
+
 
 If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
 
