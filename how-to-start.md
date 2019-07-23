@@ -28,7 +28,9 @@ If you want to write a docker compose manually, you can use the latest compose d
 
 Start Drill4J using the following command and wait a bit.
 ```console
+
 docker-compose -p drill up -d --force-recreate
+
 ```
 
 ## 3. Run your JVM application with Drill Agent
@@ -43,6 +45,7 @@ and extract files.
 
 Run the application with follow parameters:
 ```console
+
 java -agentpath:{path_to_extracted_agent_folder}\drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
 
 ```
@@ -57,6 +60,11 @@ Drill4J is ready for login. Press Continue as a guest button to get access.
 _You're breathtaking!_  
 The **last step** before you can start working with Drill4J.  
 Go to the [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
+
+> Note: don't' forget to register an agent before the start testing and add code coverage plugin.  
+  * Press "Register" button  
+  * Fill all necessary fields  
+  * Go to agent by clicking on a name and press "Add new plugin" button and choose AwesomeCodeCoverage
   
 ### Open your application and start testing   
 > If you use PetClinic as an application you can find it here [localhost:8082](http://localhost:8082)
