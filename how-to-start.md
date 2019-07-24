@@ -35,7 +35,7 @@ docker-compose -p drill up -d --force-recreate
 
 ## 3. Run your JVM application with Drill Agent
 
-Download the archive [distr-0.1.95.zip](https://github.com/Drill4J/drill4j.github.io/files/3411352/distr-0.1.95.zip) with the agent distribution
+Download the archive [distr-0.2.0.zip](https://github.com/Drill4J/drill4j.github.io/files/3425973/distr-0.2.0.zip) with the agent distribution
 and extract files.
 
 >To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
