@@ -49,7 +49,7 @@ Run the application with follow parameters:
 java -agentpath:{path_to_extracted_agent_folder}\drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
 
 ```
-> Use drill_agent.**dll** for Windows or drill_agent.**so** for Linux
+> Use drill_agent.**dll** for Windows or libdrill_agent.**so** for Linux
 
 ## 4. Open Drill4J
 Open new browser tab with Drill Admin [localhost:9090](http://localhost:9090)
