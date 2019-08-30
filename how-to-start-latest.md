@@ -35,21 +35,24 @@ docker-compose -f docker-compose-latest.yml -p drill up -d --force-recreate
 
 ## 3. Run your JVM application with Drill Agent
 
-Download the archive with the agent distribution for your OS  
-[https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent/0.3.1-SNAPSHOT/](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent/0.3.1-SNAPSHOT/)  
-and extract files.
+Download the archive with the agent distribution for your OS:  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-linuxX64/0.3.1-SNAPSHOT/)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-macosX64/0.3.1-SNAPSHOT/)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-mingwX64/0.3.1-SNAPSHOT/)  
+  and extract files.
 
 >To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
 >Download jar file by the link below [spring-petclinic-kotlin-2.0.0.jar](/assets/files/spring-petclinic-kotlin-2.0.0.jar)
 >or use **your** project.
 
 
-Run the application with follow parameters (example for Linux):
+Run the application with follow parameters (example for Windows):
 ```console
 
-java -agentpath:{path_to_extracted_agent_folder}/drill_agent.so=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
+java -agentpath:{path_to_extracted_agent_folder}/drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
 
 ```
+> Use **dll** for Windows, **so** for Linux and **dylib** agent file fo MacOS
 
 ## 4. Open Drill4J
 Open new browser tab with Drill Admin [https://localhost:9443](https://localhost:9443)
