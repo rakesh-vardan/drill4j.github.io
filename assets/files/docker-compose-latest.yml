@@ -2,7 +2,7 @@ version: '3'
 
 services:
   drill-admin:
-    image: drill4j/drill-admin:coverage-latest
+    image: drill4j/admin:coverage-latest
     ports:
       - 8090:8090
       - 8443:8443
