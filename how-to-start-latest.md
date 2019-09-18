@@ -41,14 +41,14 @@ Download the archive with the agent distribution for your OS:
   and extract files.
 
 >To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
->Download jar file by the link below [spring-petclinic-kotlin-2.0.0.jar](/assets/files/spring-petclinic-kotlin-2.0.0.jar)
+>Download jar file by the link below [spring-petclinic-kotlin-2.1.0.jar](/assets/files/spring-petclinic-kotlin-2.1.0.jar)
 >or use **your** project.
 
 
 Run the application with follow parameters (example for Windows):
 ```console
 
-java -agentpath:{path_to_extracted_agent_folder}/drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.0.0.jar  
+java -agentpath:{path_to_extracted_agent_folder}/drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.1.0.jar  
 
 ```
 > Use **dll** for Windows, **so** for Linux and **dylib** agent file fo MacOS
@@ -60,8 +60,9 @@ Open new browser tab with Drill Admin [https://localhost:9443](https://localhos
 Drill4J is ready for login. Press Continue as a guest button to get access.
 
 _You're breathtaking!_  
-The **last step** before you can start working with Drill4J.  
+The **last steps** before you can start working with Drill4J.  
 Go to the [**link**](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
+We're using self-signed certificates. After the first start, go to https://localhost:8443 click "Advanced" and "Continue"
 
 > Note: don't' forget to register an agent before the start testing and add code coverage plugin.  
   * Press "Register" button  
