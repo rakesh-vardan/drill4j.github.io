@@ -6,7 +6,6 @@ permalink: /how-to-start-latest/
 
 ![image](/assets/img/d4j_img_install_steps.png)
 
-{% include youtubePlayer.html id='hsr3sDwua40' %}
 
 ## 1. Install docker 
 > _Whether you have Docker please skip this step_
@@ -21,7 +20,7 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 ## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
 ![image](/assets/img/d4j_img_download_docker_1.png)
-<p><a href="/assets/files/docker-compose-latest.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
+<p><a href="/assets/files/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
 
 
 If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose-latest.yml)
@@ -29,16 +28,16 @@ If you want to write a docker compose manually, you can use the latest compose d
 Start Drill4J using the following command and wait a bit.
 ```console
 
-docker-compose -f docker-compose-latest.yml -p drill up -d --force-recreate
+docker-compose -f docker-compose.yml -p drill up -d --force-recreate
 
 ```
 
 ## 3. Run your JVM application with Drill Agent
 
 Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-linuxX64/0.3.1-SNAPSHOT/)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-macosX64/0.3.1-SNAPSHOT/)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-snapshot-local/com/epam/drill/drill-agent-mingwX64/0.3.1-SNAPSHOT/)  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.3.0/)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.3.0/)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.3.0/)  
   and extract files.
 
 >To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
@@ -67,7 +66,8 @@ Go to the [**link**](https://chrome.google.com/webstore/detail/drill4j-browser-e
 > Note: don't' forget to register an agent before the start testing and add code coverage plugin.  
   * Press "Register" button  
   * Fill all necessary fields  
-  * Go to agent by clicking on a name and press "Add new plugin" button and choose AwesomeCodeCoverage
+  * Go to agent by clicking on a name and press "Add new plugin" button and choose CodeCoverage
+  * Go to plugin configuration and add all necessary packages
   
 ### Open your application and start testing   
 > If you use PetClinic as an application you can find it here [localhost:8082](http://localhost:8082)
