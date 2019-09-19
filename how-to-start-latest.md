@@ -71,7 +71,7 @@ We're using self-signed certificates. After the first start, go to https://local
   * Go to plugin configuration and add all necessary packages
   
 ### Open your application and start testing   
-> If you use PetClinic as an application you can find it here [localhost:8082](http://localhost:8082)
+> If you use PetClinic as an application you can find it here [localhost:8080](http://localhost:8080)
 
 
 ## Also, if you want to try auto tests, follow this instruction:
