@@ -5,8 +5,8 @@ services:
     image: drill4j/admin:0.3.0
     ports:
       - 8090:8090
-      - 5006:5006
       - 8443:8443
+      - 5006:5006
     networks:
       - drill4j-dev-network
     restart: always
