@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to start
-permalink: /how-to-start-latest/
+permalink: /how-to-start/
 ---
 
 ![image](/assets/img/d4j_img_install_steps.png)
