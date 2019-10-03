@@ -4,7 +4,7 @@ title: Autotests agent installation guidelines
 permalink: /auto-tests-agent-guide/
 ---
 
-For using Drill4J **Code coverage plugin** with api autotests (RESTful API) you need to add 
+For using Drill4J **Test-to-code mapping plugin** with api autotests (RESTful API) you need to add 
 special auto tests agent to your test automation framework.
 
 ### 1. Clone [auto-tests-agent](https://github.com/Drill4J/auto-tests-agent) project

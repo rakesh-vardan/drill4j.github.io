@@ -32,7 +32,7 @@ It is a small software program that customizes a browsing experience. It enable
 
 
 # Plugins list
-## Code coverage
+## Test-to-code mapping
 [https://github.com/Drill4J/Drill4J/tree/develop/plugins/drill-coverage-plugin](https://github.com/Drill4J/Drill4J/tree/develop/plugins/drill-coverage-plugin)
 
 The plugin allows to do:
@@ -42,10 +42,6 @@ The plugin allows to do:
 * reduce development risks
 * improve the implementation process
 * simplify code analysis and testing process
-
-structure: 
-
-![](https://user-images.githubusercontent.com/45354520/59715782-41f82880-921d-11e9-88ca-6921ddff47c2.png)
 
 # GIT repositories structure
 

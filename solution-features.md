@@ -5,7 +5,7 @@ permalink: /features/
 ---
 # Solution features
 
--	Code coverage plugin. The plugin allows you to see code coverage of packages, classes, methods for builds and sessions, the number of new methods after commit and how many of them are covered by the current tests (Δ between code A and B), the list of associated tests.
+-	**Test-to-code mapping**. The plugin allows you to see code coverage of packages, classes, methods for builds and sessions, the number of new methods after commit and how many of them are covered by the current tests (Δ between code A and B), the list of associated tests.
 
 -	Fully adaptive format. Admin panel allows you to easily manipulate agents and plugins on the agent.
 

@@ -64,7 +64,7 @@ The **last steps** before you can start working with Drill4J.
 Go to the [**link**](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
 We're using self-signed certificates. After the first start, go to https://localhost:8443 click "Advanced" and "Continue"
 
-> Note: don't' forget to register an agent before the start testing and add code coverage plugin.  
+> Note: don't' forget to register an agent before the start testing and add test-to-code mapping plugin.  
   * Press "Register" button  
   * Fill all necessary fields  
   * Go to agent by clicking on a name and press "Add new plugin" button and choose CodeCoverage
