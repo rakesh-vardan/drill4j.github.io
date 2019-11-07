@@ -24,7 +24,8 @@ _Gradle_ (to test task):
 val agentPath = System.getProperty("agentPath")
 val adminUrl = System.getProperty("admin.url")
 val adminId = System.getProperty("agent.id")
-setJvmArgs(listOf("-javaagent:$agentPath=adminUrl=$adminUrl,agentId=$adminId"))
+val pluginId = System.getProperty("plugin.id")
+setJvmArgs(listOf("-javaagent:$agentPath=adminUrl=$adminUrl,agentId=$adminId,pluginId=$pluginId"))
 ```
 _Maven_ (to configuration):
 ```pom
@@ -32,10 +33,11 @@ _Maven_ (to configuration):
     <propertyName>agentPath</propertyName>
     <propertyName>admin.url</propertyName>
     <propertyName>agent.id</propertyName>
+    <propertyName>plugin.id</propertyName>
 </systemPropertyVariables>
 <argLine>
    -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
-   -javaagent:${agentPath}=adminUrl=${admin.url},agentId=${agent.id}
+   -javaagent:${agentPath}=adminUrl=${admin.url},agentId=${agent.id},pluginId=${plugin.id}
 </argLine>
 ```
 
@@ -44,13 +46,13 @@ _Maven_ (to configuration):
 For example, if you use _Gradle_ then the command may be looks like:
 
 ```console
-./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=MyIncredibleAgent -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar  
+./gradlew clean test -Dadmin.url=localhost:8090 -Dagent.id=ExampleAgent -Dplugin.id=test-to-code-mapping -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar  
 
 ```
 ...or for _Maven_:
 
 ```console
-mvn clean test -Dadmin.url=localhost:8090 -Dagent.id=MyIncredibleAgent -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar  
+mvn clean test -Dadmin.url=localhost:8090 -Dagent.id=ExampleAgent -Dplugin.id=test-to-code-mapping -DagentPath=../auto-tests-agent/build/libs/auto-tests-agent.jar  
 
 ```
 ...where **admin.url** is a url of your _Drill Admin_, **agent.id** is _ID_ of _Drill Agent_ and **agentPath** is a path to
