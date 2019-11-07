@@ -35,43 +35,40 @@ docker-compose -f docker-compose.yml -p drill up -d --force-recreate
 ## 3. Run your JVM application with Drill Agent
 
 Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.3.0/)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.3.0/)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.3.0/)  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.4.0/drill-agent-linuxX64-0.4.0.zip)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.4.0/drill-agent-macosX64-0.4.0.zip)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.4.0/drill-agent-mingwX64-0.4.0.zip)  
   and extract files.
 
->To demonstrate the capabilities of the product, you can use Spring PetClinic Sample Application.
->Download jar file by the link below [spring-petclinic-kotlin-2.1.0.jar](/assets/files/spring-petclinic-kotlin-2.1.0.jar)
->or use **your** project.
+To demonstrate the capabilities of the product, you can use Example Agent (based on Spring PetClinic Sample Application).    
+>Download zip archive by the link [ExampleAgent.zip](/assets/files/ExampleAgent.zip) and run **start.bat**
 
-
-Run the application with follow parameters (example for Windows):
+or start **your** java project with parameters (example for Windows):
 ```console
 
-java -agentpath:{path_to_extracted_agent_folder}/drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=MyIncredibleAgent -jar spring-petclinic-kotlin-2.1.0.jar  
+-javaagent:{path_to_extracted_agent_folder}/drill-proxy.jar=ttl.agent.logger:STDOUT -agentpath:{path_to_extracted_agent_folder}/drill_agent.dll=drillInstallationDir={path_to_extracted_agent_folder},adminAddress=localhost:8090,agentId=ExampleAgent 
 
 ```
-> Use **dll** for Windows, **so** for Linux and **dylib** agent file fo MacOS
+> Use **.dll** for Windows, **.so** for Linux and **.dylib** agent file fo MacOS
 
 ## 4. Open Drill4J
 Open new browser tab with Drill Admin [https://localhost:9443](https://localhost:9443)
->If you deploy Drill4J on a separate host, use [https://IP_ADDRESS:9443](https://IP_ADDRESS:9443) 
- 
-Drill4J is ready for login. Press Continue as a guest button to get access.
 
-_You're breathtaking!_  
+Drill4J is ready for login. Press Continue as a guest button to get access.
+ 
+>We're using self-signed certificates. After the first start, go to [https://localhost:8443](https://localhost:8443) click "Advanced" and "Continue"
+
 The **last steps** before you can start working with Drill4J.  
 Go to the [**link**](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
-We're using self-signed certificates. After the first start, go to https://localhost:8443 click "Advanced" and "Continue"
 
-> Note: don't' forget to register an agent before the start testing and add test-to-code mapping plugin.  
+>Do not forget to register an agent before the start testing and add test-to-code mapping plugin:
   * Press "Register" button  
   * Fill all necessary fields  
-  * Go to agent by clicking on a name and press "Add new plugin" button and choose CodeCoverage
+  * Go to agent by clicking on a name and press "Add new plugin" button and choose **Test-to-code mapping**
   * Go to plugin configuration and add all necessary packages
   
 ### Open your application and start testing   
-> If you use PetClinic as an application you can find it here [localhost:8080](http://localhost:8080)
+> If you use Example Agent you can find it here [localhost:8080](http://localhost:8080)
 
 
 ## Also, if you want to try auto tests, follow this instruction:

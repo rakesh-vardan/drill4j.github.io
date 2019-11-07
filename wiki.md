@@ -6,8 +6,6 @@ permalink: /Wiki/
 
 # Useful links
 
-[JIRA](https://jiraeu.epam.com/projects/EPMDJ/summary)
-
 [Chat MS Teams](https://teams.microsoft.com/l/team/19%3a193e223ed7f7454ab21c44b0f607b02f%40thread.skype/conversations?groupId=8864428e-aa21-4db2-9010-e929b8ac92b3&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d)
 
 [GitHub](https://github.com/Drill4J)
@@ -62,5 +60,3 @@ See [https://github.com/Drill4J/admin-ui/tree/develop/dev-guide](https://github
 ## Back-end
 See [https://github.com/Drill4J/Drill4J/blob/develop/README.md](https://github.com/Drill4J/Drill4J/blob/develop/README.md)
 
-# Documentation
-[https://github.com/Drill4J/documentation](https://github.com/Drill4J/documentation)
