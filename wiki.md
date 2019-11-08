@@ -21,11 +21,11 @@ It is a small software program that customizes a browsing experience. It enable
 
 
 # Deployment scheme
-![](https://user-images.githubusercontent.com/45354520/59715411-715a6580-921c-11e9-85a9-ccf98ae337d1.png)
+![](/assets/img/d4j_img_wiki_Deployment_scheme.png)
 
 
 # Agent and plugin decomposition
-![](https://user-images.githubusercontent.com/45354520/59715781-41f82880-921d-11e9-8fa9-16ee969b06ec.png)
+![](/assets/img/d4j_img_AP_Decomposition.png)
 
 
 
