@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Welcome to Drill4J 
 ---
 
