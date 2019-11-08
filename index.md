@@ -8,28 +8,32 @@ title: Welcome to Drill4J
 A list of tests recommended to be run after the changes in code have been made.
 
 
-![image](/assets/img/main_page/4.png)
+<a href="/assets/img/main_page/4.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/4.png"></a>
 
 ## Build Code to Test mapping
 Mapping of tests to a method and vice versa.
  
  ​
-![image](/assets/img/main_page/5.png)
+<a href="/assets/img/main_page/5.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/5.png"></a>
+
 
 ## Difference
 Changes in code compared to the previous build version.
 
 
-![image](/assets/img/main_page/2.png)
+<a href="/assets/img/main_page/2.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/2.png"></a>
+
 
 ## Measure code coverage 
 By any types of tests (manual, automated, integration, performance, etc.)​
 
 
-![image](/assets/img/main_page/1.png)
+<a href="/assets/img/main_page/1.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/1.png"></a>
+
 
 ## Test results visualization
 Simplify code analysis and testing process
 
 
-![image](/assets/img/main_page/6.png)
+<a href="/assets/img/main_page/6.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/6.png"></a>
+
