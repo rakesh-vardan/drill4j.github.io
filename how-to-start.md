@@ -35,12 +35,12 @@ docker-compose -f docker-compose.yml -p drill up -d --force-recreate
 ## 3. Run your JVM application with Drill Agent
 
 Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.4.0/drill-agent-linuxX64-0.4.0.zip)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.4.0/drill-agent-macosX64-0.4.0.zip)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.4.0/drill-agent-mingwX64-0.4.0.zip)  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.4.10/drill-agent-linuxX64-0.4.10.zip)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.4.10/drill-agent-macosX64-0.4.10.zip)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.4.10/drill-agent-mingwX64-0.4.10.zip)  
   and extract files.
 
-To demonstrate the capabilities of the product, you can use Example Agent (based on Spring PetClinic Sample Application).    
+To demonstrate the capabilities of the product, you can use Example Agent for Windows (based on Spring PetClinic Sample Application).    
 >Download zip archive by the link [ExampleAgent.zip](/assets/files/ExampleAgent.zip) and run **start.bat**
 
 or start **your** java project with parameters (example for Windows):
