@@ -20,10 +20,10 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 ## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
 ![image](/assets/img/d4j_img_download_docker_1.png)
-<p><a href="/assets/files/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
+<p><a href="/assets/files/0.4.0/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
 
 
-If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/docker-compose.yml)
+If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/0.4.0/docker-compose.yml)
 
 Start Drill4J using the following command and wait a bit.
 ```console
@@ -35,13 +35,13 @@ docker-compose -f docker-compose.yml -p drill up -d --force-recreate
 ## 3. Run your JVM application with Drill Agent
 
 Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.4.10/drill-agent-linuxX64-0.4.10.zip)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.4.10/drill-agent-macosX64-0.4.10.zip)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.4.10/drill-agent-mingwX64-0.4.10.zip)  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.4.0/drill-agent-linuxX64-0.4.0.zip)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.4.0/drill-agent-macosX64-0.4.0.zip)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.4.0/drill-agent-mingwX64-0.4.0.zip)  
   and extract files.
 
 To demonstrate the capabilities of the product, you can use Example Agent for Windows (based on Spring PetClinic Sample Application).    
->Download zip archive by the link [ExampleAgent.zip](/assets/files/ExampleAgent.zip) and run **start.bat**
+>Download zip archive by the link [ExampleAgent.zip](/assets/files/0.4.0/ExampleAgent.zip) and run **start.bat**
 
 or start **your** java project with parameters (example for Windows):
 ```console
