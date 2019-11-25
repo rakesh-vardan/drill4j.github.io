@@ -3,6 +3,8 @@ version: '3'
 services:
   drill-admin:
     image: drill4j/admin:0.4.0
+    environment:
+      - T2CM_VERSION=0.4.0
     ports:
       - 8090:8090
       - 8443:8443
