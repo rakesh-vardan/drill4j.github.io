@@ -16,7 +16,7 @@ services:
   admin-ui:
     image: drill4j/admin-ui:latest
     ports:
-      - 9443:443
+      - 9090:9090
     networks:
       - drill4j-dev-network
 
