@@ -3,11 +3,11 @@ version: '3'
 services:
   drill-admin:
     image: drill4j/admin:latest
-#    environment:
+    environment:
+      - DRILL_PORT=8090
 #      - T2CM_VERSION=0.4.0
     ports:
-      - 8090:8090
-      - 8443:8443
+      - ${DRILL_PORT}:8090
       - 5006:5006
     networks:
       - drill4j-dev-network
@@ -15,8 +15,10 @@ services:
 
   admin-ui:
     image: drill4j/admin-ui:latest
+    environment:
+      - DRILL_UI_PORT=8091
     ports:
-      - 9090:9090
+      - ${DRILL_UI_PORT}:8080
     networks:
       - drill4j-dev-network
 
