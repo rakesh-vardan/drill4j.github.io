@@ -59,7 +59,7 @@ Drill4J is ready for login. Press Continue as a guest button to get access.
 >We're using self-signed certificates. After the first start, go to [https://localhost:8443](https://localhost:8443) click "Advanced" and "Continue"
 
 The **last steps** before you can start working with Drill4J.  
-Go to the [**link**](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru) and install the browser extension for manual testing.
+Download [**drill4j-browser-extension.zip**](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/0.4.0/drill4j-browser-extension.zip) and install the browser extension for manual testing.
 
 >Do not forget to register an agent before the start testing and add test-to-code mapping plugin:
   * Press "Register" button  
