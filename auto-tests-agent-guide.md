@@ -7,6 +7,8 @@ permalink: /auto-tests-agent-guide/
 For using Drill4J **Test-to-code mapping plugin** with api autotests (RESTful API) you need to add 
 special auto tests agent to your test automation framework.
 
+**IMPORTANT** JAVA 8 is required.
+
 ### 1. Clone [auto-tests-agent](https://github.com/Drill4J/auto-tests-agent) project
 ```console
 git clone https://github.com/Drill4J/auto-tests-agent.git
@@ -36,7 +38,6 @@ _Maven_ (to configuration):
     <propertyName>plugin.id</propertyName>
 </systemPropertyVariables>
 <argLine>
-   -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
    -javaagent:${agentPath}=adminUrl=${admin.url},agentId=${agent.id},pluginId=${plugin.id}
 </argLine>
 ```
