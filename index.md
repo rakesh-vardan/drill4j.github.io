@@ -3,6 +3,8 @@ layout: default
 title: Welcome to Drill4J 
 ---
 
+# Current release [0.5.0]({% link _posts/2020-04-7-release-0.5.0.md %})  
+
 **Drill4J** is **"feature-on-demand"** tool for real-time application profiling that does not affect codebase.  
 It provides the ability to make white box functional testing, via access to application instructions and memory.
 ## Risks and Tests-To-Run
