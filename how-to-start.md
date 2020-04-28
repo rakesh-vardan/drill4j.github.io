@@ -25,6 +25,9 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 
 If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/0.5.0/docker-compose.yml)
 
+> If you start drill first time, create the network manually using  
+> `docker network create drill4j-dev-network`
+
 Start Drill4J using the following command and wait a bit.
 ```console
 

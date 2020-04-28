@@ -6,7 +6,6 @@ services:
     environment:
       - TEST2CODE_PLUGIN_VERSION=latest
       - LOG_LEVEL=INFO
-      - DRILL_AGENTS_SOCKET_TIMEOUT=90
     ports:
       - 8090:8090
     networks:

@@ -5,7 +5,7 @@ services:
     image: drill4j/admin:0.5.0
     environment:
       - TEST2CODE_PLUGIN_VERSION=0.5.0
-      - LOG_LEVEL=info
+      - LOG_LEVEL=INFO
       - DRILL_AGENTS_SOCKET_TIMEOUT=90
     ports:
       - 8090:8090

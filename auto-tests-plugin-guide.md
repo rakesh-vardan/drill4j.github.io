@@ -30,7 +30,7 @@ plugins {
 ```
 ```groovy
 drill {
-    version = "+"
+    version = "0.1.2"
     adminHost = "localhost"
     agentId = "ExampleAgentId"
     adminPort = 8090
@@ -51,7 +51,7 @@ drill {
             <plugin>
                 <groupId>com.epam.drill.agent.runner</groupId>
                 <artifactId>maven</artifactId>
-                <version>0.1.0</version>
+                <version>0.1.2</version>
                 <executions>
                     <execution>
                         <goals>
@@ -64,7 +64,6 @@ drill {
                         <agentId>ExampleAgentId</agentId>
                         <adminHost>localhost</adminHost>
                         <adminPort>8090</adminPort>
-                        <debug>true</debug>
                     </drill>
                 </configuration>
             </plugin>

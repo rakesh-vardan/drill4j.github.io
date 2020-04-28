@@ -1,8 +1,33 @@
 ---
 layout: page
-title: Wiki
-permalink: /Wiki/
+title: FAQ
+permalink: /faq/
 ---
+
+**Does Drill work only with JVM?**  
+Currently yes, but we're working on .Net agent and JavaScript agent. Python and Ruby agents are also possible in the future.
+
+**Which Java versions do you support?**  
+Java 8+
+
+**Can I use Microservice applications?**  
+Yes, we're supporting microservice applications.
+ 
+**Can I use Drill for Android applications?**  
+Yes, it is possible, but it's necessary to implement an agent for android application.
+
+**Can I use .war?**  
+Yes, but only monolith applications on Tomcat, Jetty, WildFly. Java 8+
+ 
+**What method of collecting coverage are you using?**  
+Probes in bytecode. So, methods can be covered in the range of 0.1 - 100. 
+Also, we will add the ability to choose a method of coverage collecting. (By string and etc.)
+ 
+**Which test types do you support?**  
+Auto, Manual 
+ 
+**Why do I need it?**  
+Probably, if your project is small and doesn't have a lot of tests, then you don't need it. BUT, if it's a legacy project with a lot of tests, the tool saves your testing time via Test gap analysis and minimizing of regression suite.
 
 # Useful links
 
@@ -29,34 +54,13 @@ It is a small software program that customizes a browsing experience. It enable
 
 
 
-# Plugins list
-## Test-to-code mapping
-[https://github.com/Drill4J/Drill4J/tree/develop/plugins/drill-coverage-plugin](https://github.com/Drill4J/Drill4J/tree/develop/plugins/drill-coverage-plugin)
 
-The plugin allows to do:
+## Development installation:
 
-* identify unfulfilled code areas
-* visualize all the necessary data for the team
-* reduce development risks
-* improve the implementation process
-* simplify code analysis and testing process
-
-# GIT repositories structure
-
-
-Drill4J/Drill4J - backend
-
-Drill4J/admin-ui - frontend
-
-Drill4J/browser-extension - extension
-
-
-# Development installation
-
-## Front-end
+### Front-end
 See [https://github.com/Drill4J/admin-ui/tree/develop/dev-guide](https://github.com/Drill4J/admin-ui/tree/develop/dev-guide)
 
 
-## Back-end
+### Back-end
 See [https://github.com/Drill4J/Drill4J/blob/develop/README.md](https://github.com/Drill4J/Drill4J/blob/develop/README.md)
 
