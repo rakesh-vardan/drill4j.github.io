@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Microservices support
+title: Microservices Support
 permalink: /microservices-support/
 ---
 

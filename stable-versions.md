@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stable versions
+title: Stable Versions
 permalink: /stable-versions/
 ---
 * **admin** 

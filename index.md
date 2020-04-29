@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Welcome to Drill4J 
+title: Welcome to Drill 
 ---
 
 <p align="right"><a href="/try-demo/"><img src="/assets/img/main_page/demo.png" alt="image" /></a></p>
 
-**Drill4J** is **"feature-on-demand"** tool for real-time application profiling that does not affect codebase.  
+**Drill** is **"feature-on-demand"** tool for real-time application profiling that does not affect codebase.  
 It provides the ability to make white box functional testing, via access to application instructions and memory.
 
 {% include youtubePlayer.html id='N_WJYrt5qNc' %}  

@@ -36,8 +36,8 @@ Probably, if your project is small and doesn't have a lot of tests, then you don
 
 [Contribute](https://contribute.epam.com/products/136)
 
-# Drill4J browser extension
-Google play [link](https://chrome.google.com/webstore/detail/drill4j-browser-extension/lhlkfdlgddnmbhhlcopcliflikibeplm?hl=ru)
+# Drill browser extension
+[https://github.com/Drill4J/browser-extension/releases](https://github.com/Drill4J/browser-extension/releases)
 
 It is a small software program that customizes a browsing experience. It enables users to tailor Chrome functionality and behavior to their preferences and needs
 

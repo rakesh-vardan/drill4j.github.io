@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to start
+title: How to Start
 permalink: /how-to-start/
 ---
 
@@ -17,7 +17,7 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 
 **IMPORTANT** Allocate at least 3+Gb of RAM for Docker via Docker Settings > Advanced. 
 
-## 2. Configure and deploy Drill4J Admin with Docker-Compose file
+## 2. Configure and deploy Drill Admin with Docker-Compose file
 
 ![image](/assets/img/d4j_img_download_docker_1.png)
 <p><a href="/assets/files/stable/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
@@ -25,7 +25,7 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 
 If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/stable/docker-compose.yml)
 
-Start Drill4J using the following command and wait a bit.
+Start Drill using the following command and wait a bit.
 
 ```console
 
@@ -75,12 +75,12 @@ services:
 ```
 > Use **.dll** for Windows, **.so** for Linux and **.dylib** agent file fo MacOS
 
-## 4. Open Drill4J
+## 4. Open Drill
 Open new browser tab with Drill Admin [http://localhost:8091](http://localhost:8091)
 
-Drill4J is ready for login. Press Continue as a guest button to get access.
+Drill is ready for login. Press Continue as a guest button to get access.
  
-The **last steps** before you can start working with Drill4J.  
+The **last steps** before you can start working with Drill.  
 #### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9) and install the browser extension for manual testing.
 
 >Do not forget to register an agent before the start testing and add Test2Code plugin

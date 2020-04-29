@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Demo example
+title: Demo Example
 permalink: /try-demo/
 ---
 
