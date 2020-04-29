@@ -31,8 +31,6 @@ Probably, if your project is small and doesn't have a lot of tests, then you don
 
 # Useful links
 
-[Chat MS Teams](https://teams.microsoft.com/l/team/19%3a193e223ed7f7454ab21c44b0f607b02f%40thread.skype/conversations?groupId=8864428e-aa21-4db2-9010-e929b8ac92b3&tenantId=b41b72d0-4e9f-4c26-8a69-f949f367c91d)
-
 [GitHub](https://github.com/Drill4J)
 
 [Contribute](https://contribute.epam.com/products/136)
