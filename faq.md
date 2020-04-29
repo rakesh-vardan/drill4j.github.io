@@ -11,7 +11,7 @@ Currently yes, but we're working on .Net agent and JavaScript agent. Python and 
 Java 8+
 
 **Can I use Microservice applications?**  
-Yes, we're supporting microservice applications. [(more info)](/microservices-supporting/)
+Yes, we're supporting microservice applications. [(more info)](/microservices-support/)
  
 **Can I use Drill for Android applications?**  
 Yes, it is possible, but it's necessary to implement an agent for android application.

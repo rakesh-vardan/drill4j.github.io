@@ -4,10 +4,10 @@ title: Autotest agent installation guidelines
 permalink: /autotest-agent-guide/
 ---
 
-For using Drill4J **test2code plugin** with api autotests (RESTful API) you need to add 
-special autotest agent to your test automation framework.
+For using Drill4J **test2code plugin** with API autotests (RESTful API) you need to add 
+a special autotest agent to your test automation framework.
 
-Currently, drill autotest agent support next test runners:
+Currently, drill autotest agent supports next test runners:
 * **junit4**
 * **junit5**
 * **testNG**
