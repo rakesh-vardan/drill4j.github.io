@@ -14,7 +14,7 @@ To combine agents into a service group, you need to add only one more parameter 
  > groupId  
 
 After that, your application will look like a monolith for testing with Drill and you will need to use
-**groupId** instead of **agentId** for autotest [here](/auto-tests-plugin-guide/)
+**groupId** instead of **agentId** for autotest [here](/autotest-agent-guide/)
 > drill browser extension detects service group automatically
 
 Docker-compose file for your application may look like this

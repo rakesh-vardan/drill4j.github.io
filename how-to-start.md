@@ -20,27 +20,25 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 ## 2. Configure and deploy Drill4J Admin with Docker-Compose file
 
 ![image](/assets/img/d4j_img_download_docker_1.png)
-<p><a href="/assets/files/0.5.0/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
+<p><a href="/assets/files/stable/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
 
 
-If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/0.5.0/docker-compose.yml)
-
-> If you start drill first time, create the network manually using  
-> `docker network create drill4j-dev-network`
+If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/stable/docker-compose.yml)
 
 Start Drill4J using the following command and wait a bit.
+
 ```console
 
-docker-compose -f docker-compose.yml -p drill up -d --force-recreate
+docker-compose up -d
 
 ```
 
 ## 3. Run your application with Drill Agent
 
 Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.5.0/drill-agent-linuxX64-0.5.0.zip)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.5.0/drill-agent-macosX64-0.5.0.zip)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.5.0/drill-agent-mingwX64-0.5.0.zip)  
+[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.5.0-65/drill-agent-linuxX64-0.5.0-65.zip)    
+[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.5.0-65/drill-agent-macosX64-0.5.0-65.zip)    
+[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.5.0-65/drill-agent-mingwX64-0.5.0-65.zip)  
   and extract files.
 
 ### Now you have drill agent files and 2 typical way to start your application with drill agent.
@@ -83,7 +81,7 @@ Open new browser tab with Drill Admin [http://localhost:8091](http://localhost:
 Drill4J is ready for login. Press Continue as a guest button to get access.
  
 The **last steps** before you can start working with Drill4J.  
-#### Download [**drill-browser-extension.zip**](/assets/files/0.5.0/drill-browser-extension.zip) and install the browser extension for manual testing.
+#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9) and install the browser extension for manual testing.
 
 >Do not forget to register an agent before the start testing and add Test2Code plugin
 
@@ -93,5 +91,5 @@ Press "Register" button and follow registration wizards steps:
   * Add **Test2code** plugin
   
 ## Also, if you want to try auto tests, follow this instruction:
-#### [Using auto tests agent](/auto-tests-plugin-guide/)
+#### [Using auto tests agent](/autotest-agent-guide/)
 

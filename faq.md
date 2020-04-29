@@ -11,7 +11,7 @@ Currently yes, but we're working on .Net agent and JavaScript agent. Python and 
 Java 8+
 
 **Can I use Microservice applications?**  
-Yes, we're supporting microservice applications.
+Yes, we're supporting microservice applications. [(more info)](/microservices-supporting/)
  
 **Can I use Drill for Android applications?**  
 Yes, it is possible, but it's necessary to implement an agent for android application.
@@ -24,7 +24,8 @@ Probes in bytecode. So, methods can be covered in the range of 0.1 - 100.
 Also, we will add the ability to choose a method of coverage collecting. (By string and etc.)
  
 **Which test types do you support?**  
-Auto, Manual 
+    - Manual [(use browser extension)](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9)  
+    - Auto [(more info)](/autotest-agent-guide/)
  
 **Why do I need it?**  
 Probably, if your project is small and doesn't have a lot of tests, then you don't need it. BUT, if it's a legacy project with a lot of tests, the tool saves your testing time via Test gap analysis and minimizing of regression suite.

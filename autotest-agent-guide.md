@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Autotests plugin installation guidelines
-permalink: /auto-tests-plugin-guide/
+title: Autotest agent installation guidelines
+permalink: /autotest-agent-guide/
 ---
 
 For using Drill4J **test2code plugin** with api autotests (RESTful API) you need to add 
-special auto tests plugin to your test automation framework.
+special autotest agent to your test automation framework.
 
-Currently, drill autotests plugin support next test runners:
+Currently, drill autotest agent support next test runners:
 * **junit4**
 * **junit5**
 * **testNG**
@@ -25,12 +25,12 @@ pluginManagement {
 ```groovy
 plugins {
     id 'java'
-    id 'com.epam.drill.agent.runner.autotest' version '0.1.0'
+    id 'com.epam.drill.agent.runner.autotest' version '0.1.2'
 }
 ```
 ```groovy
 drill {
-    version = "0.1.2"
+    version = "0.1.4"
     adminHost = "localhost"
     agentId = "ExampleAgentId"
     adminPort = 8090
@@ -61,6 +61,7 @@ drill {
                 </executions>
                 <configuration>
                     <drill>
+                        <version>0.1.4</version>
                         <agentId>ExampleAgentId</agentId>
                         <adminHost>localhost</adminHost>
                         <adminPort>8090</adminPort>

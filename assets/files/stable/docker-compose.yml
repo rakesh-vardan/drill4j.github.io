@@ -2,19 +2,17 @@ version: '3'
 
 services:
   drill-admin:
-    image: drill4j/admin:0.5.0
+    image: drill4j/admin:0.5.0-130
     environment:
-      - TEST2CODE_PLUGIN_VERSION=0.5.0
+      - TEST2CODE_PLUGIN_VERSION=0.5.0-128
       - LOG_LEVEL=INFO
-      - DRILL_AGENTS_SOCKET_TIMEOUT=90
     ports:
       - 8090:8090
     networks:
       - drill4j-dev-network
-    restart: always
 
   admin-ui:
-    image: drill4j/admin-ui:0.5.0
+    image: drill4j/admin-ui:0.5.0-37
     ports:
       - 8091:8080
     networks:
@@ -22,5 +20,3 @@ services:
 
 networks:
   drill4j-dev-network:
-    external:
-      name: drill4j-dev-network

@@ -3,8 +3,6 @@ layout: default
 title: Welcome to Drill4J 
 ---
 
-
-<h3 align="right" id="current-release-050"><a href="/2020/04/07/release-0.5.0.html">Released 0.5.0</a></h3>
 <p align="right"><a href="/try-demo/"><img src="/assets/img/main_page/demo.png" alt="image" /></a></p>
 
 **Drill4J** is **"feature-on-demand"** tool for real-time application profiling that does not affect codebase.  
