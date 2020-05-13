@@ -24,7 +24,7 @@ services:
     ports:
       - 8087:8080
     environment:
-      - JAVA_TOOL_OPTIONS="-agentpath:/data/libdrill_agent.so=drillInstallationDir=/data,adminAddress=drill-admin:8090,agentId=ExampleAgent,buildVersion=0.1.0"
+      - JAVA_TOOL_OPTIONS="-agentpath:/data/libdrill_agent.so=drillInstallationDir=/data,adminAddress=host.docker.internal:8090,agentId=ExampleAgent,buildVersion=0.1.0"
     volumes:
       - agent-files:/data
     networks:

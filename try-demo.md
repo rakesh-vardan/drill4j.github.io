@@ -8,11 +8,19 @@ permalink: /try-demo/
 > All you need is docker with docker-compose.
 <p><a href="/assets/files/stable/demo/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
 
-#### Start example:
+#### Start Drill Admin:
 
 ```console
 
-docker-compose up -d
+docker-compose up -d drill-admin admin-ui agent-files
+
+```
+
+#### Start Example App with Drill Agent:
+
+```console
+
+docker-compose up -d example-app
 
 ```
 
