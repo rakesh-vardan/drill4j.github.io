@@ -20,6 +20,6 @@ docker-compose up -d
 #### and Application UI on [http://localhost:8087](http://localhost:8087) 
 > app based on [spring petclinic](https://github.com/spring-projects/spring-petclinic)  
 
-#### Add browser extension [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9) and 
+#### Add browser extension [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and 
 ### start testing with Drill!
 

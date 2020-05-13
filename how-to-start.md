@@ -22,9 +22,6 @@ Docker is supported by all major Linux distributions, MacOS and Windows.
 ![image](/assets/img/d4j_img_download_docker_1.png)
 <p><a href="/assets/files/stable/docker-compose.yml" download><img src="/assets/img/d4j_img_download_docker_2.png" alt="image" /></a></p>
 
-
-If you want to write a docker compose manually, you can use the latest compose descriptor example in [Github repository](https://github.com/Drill4J/drill4j.github.io/blob/master/assets/files/stable/docker-compose.yml)
-
 Start Drill using the following command and wait a bit.
 
 ```console
@@ -35,15 +32,9 @@ docker-compose up -d
 
 ## 3. Run your application with Drill Agent
 
-Download the archive with the agent distribution for your OS:  
-[**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-linuxX64/0.5.0-65/drill-agent-linuxX64-0.5.0-65.zip)    
-[**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-macosX64/0.5.0-65/drill-agent-macosX64-0.5.0-65.zip)    
-[**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/drill-agent-mingwX64/0.5.0-65/drill-agent-mingwX64-0.5.0-65.zip)  
-  and extract files.
+> Now you have 2 typical way to start your application with drill agent.
 
-### Now you have drill agent files and 2 typical way to start your application with drill agent.
-
-#### 3.1 If you use docker images of app you need to share volume with drill agent files and add JAVA parameters:
+### 3.1 If you use docker images of app you need to share volume with drill agent files and add JAVA parameters:
 ```yaml
 version: '3'
 
@@ -53,19 +44,27 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./distr:/data    
+      - agent-files:/data    
     environment:
       - JAVA_TOOL_OPTIONS="-agentpath:/data/libdrill_agent.so=drillInstallationDir=/data,adminAddress=localhost:8090,agentId=ExampleAgentId,buildVersion=0.1.0"
 
+  agent-files:
+    image: drill4j/java-agent:0.5.0
+    volumes:
+      - agent-files:/java-agent
+
+volumes:
+  agent-files:
 ```
 
-> **distr** - folder with drill agent files.  
+> **agent-files** - container with drill agent files.  
 > **adminAddress** - host and backend port of you drill admin.  
 > **agentId** - ID for drill agent of application.  
 > **buildVersion** - build version of your application.  
 
-#### 3.2 If you use jar for running you can start application with follow parameters:
-
+### 3.2 If you use jar for running you can download the archive with the agent distribution for your OS:    
+[**java-agent**](https://github.com/Drill4J/java-agent/releases/tag/v0.5.0) and extract files.
+#### and start application with follow parameters
 > (example for Windows):
 
 ```console
@@ -81,7 +80,7 @@ Open new browser tab with Drill Admin [http://localhost:8091](http://localhost:
 Drill is ready for login. Press Continue as a guest button to get access.
  
 The **last steps** before you can start working with Drill.  
-#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9) and install the browser extension for manual testing.
+#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and install the browser extension for manual testing.
 
 >Do not forget to register an agent before the start testing and add Test2Code plugin
 
