@@ -84,14 +84,15 @@ Open new browser tab with Drill Admin [http://localhost:8091](http://localhost:
 Drill is ready for login. Press Continue as a guest button to get access.
  
 The **last steps** before you can start working with Drill.  
-#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and install the browser extension for manual testing.
 
->Do not forget to register an agent before the start testing and add Test2Code plugin
+>Do not forget to register an agent before the start testing and add Test2Code plugin.
 
 Press "Register" button and follow registration wizards steps:
-  * Fill all necessary general settings
-  * Configure all necessary packages of your application
-  * Add **Test2code** plugin
+  * 1st step. Fill all necessary general settings
+  * 2nd step. Configure all necessary packages of your application
+  * 3rd step. Add **Test2code** plugin
+  
+#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and install the browser extension for manual testing.
   
 ## Also, if you want to try auto tests, follow this instruction:
 #### [Using auto tests agent](/autotest-agent-guide/)
