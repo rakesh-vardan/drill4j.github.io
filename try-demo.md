@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Demo Example
+title: Demo Example ( Java agent )
 permalink: /try-demo/
 ---
 
@@ -30,4 +30,43 @@ docker-compose up -d example-app
 
 #### Add browser extension [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and 
 ### start testing with Drill!
+
+***
+
+
+## Demo Example ( JS agent )
+> ATTENTION: experimental functionality
+
+JavaScript agent is still a WIP, but we are pleased to provide you with the opportunity to try it out.  
+#### Clone example repository:
+```console
+
+git clone https://github.com/Drill4J/todomvc
+
+```
+#### Run docker-compose from project directory:
+>includes Drill Admins services
+
+```console
+
+docker-compose up -d
+
+```
+>Drill admin UI will be available by [http://localhost:9091](http://localhost:9091)
+
+#### If you haven't done earlier 
+#### add browser extension [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13)
+
+#### Configure browser extension:
+
+Add new domain and set:
+>Host = todomvc.com   
+Agent id = todomvc-typescript-angular  
+Agent URL = localhost:9404  
+Agent Type = JS  
+
+#### Open [http://todomvc.com/examples/typescript-angular/](http://todomvc.com/examples/typescript-angular/) and
+### start testing with Drill!
+
+## We will be very appreciate for any feedback.
 
