@@ -25,7 +25,7 @@ Also, we will add the ability to choose a method of coverage collecting. (By str
  
 **Which test types do you support?**  
     - Manual [(use browser extension)](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9)  
-    - Auto [(more info)](/autotest-agent-guide/)
+    - Auto (API, UI) [(more info)](/autotest-agent-guide/)
  
 **Why do I need it?**  
 Probably, if your project is small and doesn't have a lot of tests, then you don't need it. BUT, if it's a legacy project with a lot of tests, the tool saves your testing time via Test gap analysis and minimizing of regression suite.
@@ -40,6 +40,9 @@ Yes, but you need to move the **/work** directory to the volume
 **Where can I find API requests?**  
 Swagger is available on port **8090** of backend service. For example, if  Drill frontend and backend parts are installed locally, then swagger is available at [http://localhost:8090](http://localhost:8090)
 Also, you can download the [Postman collection](/assets/files/stable/drill-postman-collection.zip) with sample requests.
+
+**My application has https connection. Does it suitable case for Drill?**   
+Yes, Drill supports https connection. [(https drill setup)](/https-drill-setup) 
 
 
 # Useful links

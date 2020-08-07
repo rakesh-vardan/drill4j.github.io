@@ -16,7 +16,7 @@ A list of tests recommended to be run after the changes in code have been made.
 
 <a href="/assets/img/main_page/4.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/4.png"></a>
 
-## Build Code to Test mapping
+## Build Code to Test Mapping
 Mapping of tests to a method and vice versa.
  
  ​
@@ -30,21 +30,21 @@ Changes in code compared to the previous build version.
 <a href="/assets/img/main_page/2.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/2.png"></a>
 
 
-## Measure code coverage 
+## Measure Code Coverage 
 By any types of tests (manual, automated, integration, performance, etc.)​
 
 
 <a href="/assets/img/main_page/1.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/1.png"></a>
 
 
-## Test results visualization
+## Test Results Visualization
 Simplify code analysis and testing process
 
 
 <a href="/assets/img/main_page/6.png" title="click here to see the full sized image and back to return"><img src="/assets/img/main_page/6.png"></a>
 
 
-## Commercial services
+## Commercial Services
 
 * **Support**  
     Q&A sessions

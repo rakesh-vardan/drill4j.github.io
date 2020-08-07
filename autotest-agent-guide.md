@@ -74,7 +74,7 @@ drill {
 ```
 
 ### Notes
-> If you use **remote** setup for UI autotests run (Selenium GRID, SELENOID etc.)  
+> If you use **remote** setup for UI autotests run (Selenium GRID, SELENOID etc.),  
  you need to deploy proxy service:
 ```yaml
 browser-proxy:
@@ -82,7 +82,7 @@ browser-proxy:
     ports:
       - 7777:7777
 ```
->and add additional param **browserProxyAddress** to autotests agent config like that:  
+>and add additional param **browserProxyAddress** to autotests agent config:  
 **Gradle**
 ```groovy
 drill {

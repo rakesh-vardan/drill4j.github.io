@@ -4,7 +4,7 @@ title: Https Setup
 permalink: /https-drill-setup/
 ---
 
-If your application use **https** for access you need to deploy additional **ssl-proxy** service
+If your application uses **https** for access you need to deploy additional **ssl-proxy** service
 to Drill admin setup:
 ```yaml
 ssl-proxy-admin:
@@ -18,7 +18,7 @@ ssl-proxy-admin:
       TARGET_PORT: 8080
 ```
 
-For example, full docker-compose file will look like this in this case:
+For example, full docker-compose file looks like:
 ```yaml
 version: '3'
 
@@ -55,5 +55,5 @@ ssl-proxy-admin:
 networks:
   drill4j-dev-network:
 ```
-After that Drill admin will be available by **https://drillAdminHost:8443**
+After that Drill admin is available on **https://drillAdminHost:8443**
 > Accept self signed certificate
