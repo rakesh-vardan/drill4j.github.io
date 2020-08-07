@@ -32,7 +32,7 @@ docker-compose up -d
 
 ## 3. Run your application with Drill Agent
 
-> Now you have 2 typical way to start your application with drill agent.
+> Now you have 2 typical ways to start your application with drill agent.
 
 ### 3.1 If you use docker images of app you need to share volume with drill agent files and add JAVA parameters:
 ```yaml
@@ -57,14 +57,14 @@ volumes:
   agent-files:
 ```
 > **agent-files** - container with drill agent files.  
-> **adminAddress** - host and backend port (**8090** - default port for agent connection) of you drill admin.  
+> **adminAddress** - host and backend port (**8090** - default port for agent connection) of your drill admin.  
 > **agentId** - ID for drill agent of application.  
 > **buildVersion** - build version of your application.
 
 
 ### 3.2 If you use jar for running you can download the archive with the agent distribution for your OS:    
 [**java-agent**](https://github.com/Drill4J/java-agent/releases/tag/v0.6.0) and extract files.
-#### and start application with follow parameters
+#### and start application with following parameters
 
 > (example for Windows):
 
@@ -73,7 +73,7 @@ volumes:
 -agentpath:distr/drill_agent.dll=drillInstallationDir=distr,adminAddress=localhost:8090,agentId=ExampleAgent,buildVersion=0.1.0
 
 ```
-> **distr** - folder with drill agent files. Use **.dll** for Windows, **.so** for Linux and **.dylib** agent file fo MacOS 
+> **distr** - folder with drill agent files. Use **.dll** for Windows, **.so** for Linux and **.dylib** agent file for MacOS 
 > **adminAddress** - host and backend port (**8090** - default port for agent connection) of you drill admin.  
 > **agentId** - ID for drill agent of application.  
 > **buildVersion** - build version of your application. 
