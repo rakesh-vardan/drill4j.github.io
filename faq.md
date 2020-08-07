@@ -24,7 +24,7 @@ Probes in bytecode. So, methods can be covered in the range of 0.1 - 100.
 Also, we will add the ability to choose a method of coverage collecting. (By string and etc.)
  
 **Which test types do you support?**  
-    - Manual [(use browser extension)](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.9)  
+    - Manual [(use browser extension)](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.15)  
     - Auto (API, UI) [(more info)](/autotest-agent-guide/)
  
 **Why do I need it?**  

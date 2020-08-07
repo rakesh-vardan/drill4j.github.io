@@ -8,7 +8,7 @@ If your application uses **https** for access you need to deploy additional **ss
 to Drill admin setup:
 ```yaml
 ssl-proxy-admin:
-    image: drill4j/ssl-proxy:latest
+    image: drill4j/ssl-proxy:0.1.0
     ports:
       - 8443:8443
     environment:
@@ -24,7 +24,7 @@ version: '3'
 
 services:
 ssl-proxy-admin:
-    image: drill4j/ssl-proxy:latest
+    image: drill4j/ssl-proxy:0.1.0
     ports:
       - 8443:8443
     environment:

@@ -31,7 +31,7 @@ plugins {
 ```
 ```groovy
 drill {
-    version = "0.3.3"
+    version = "0.4.0"
     adminHost = "localhost"
     agentId = "ExampleAgentId"
     adminPort = 8090
@@ -62,7 +62,7 @@ drill {
                 </executions>
                 <configuration>
                     <drill>
-                        <version>0.3.3</version>
+                        <version>0.4.0</version>
                         <agentId>ExampleAgentId</agentId>
                         <adminHost>localhost</adminHost>
                         <adminPort>8090</adminPort>
@@ -87,7 +87,7 @@ browser-proxy:
 ```groovy
 drill {
     additionalParams = ["browserProxyAddress" : "proxyHost:7777"]
-    version = "0.3.3"
+    version = "0.4.0"
     adminHost = "localhost"
     agentId = "ExampleAgentId"
     adminPort = 8090
@@ -101,7 +101,7 @@ drill {
             <additionalParams>
                 <browserProxyAddress>proxyHost:7777</browserProxyAddress>
             </additionalParams>
-            <version>0.3.3</version>
+            <version>0.4.0</version>
             <agentId>ExampleAgentId</agentId>
             <adminHost>localhost</adminHost>
             <adminPort>8090</adminPort>

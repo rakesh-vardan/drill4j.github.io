@@ -13,9 +13,9 @@ permalink: /stable-versions/
 * **agents** 
     * for application: [**0.6.0**](https://github.com/Drill4J/java-agent/releases/tag/v0.6.0)  
     * for autotest: **0.4.0**    
-    [**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-linuxX64/0.3.3/autoTestAgent-linuxX64-0.3.3.zip)    
-    [**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-macosX64/0.3.3/autoTestAgent-macosX64-0.3.3.zip)    
-    [**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-mingwX64/0.3.3/autoTestAgent-mingwX64-0.3.3.zip)
+    [**Linux**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-linuxX64/0.4.0/autoTestAgent-linuxX64-0.4.0.zip)    
+    [**MacOS**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-macosX64/0.4.0/autoTestAgent-macosX64-0.4.0.zip)    
+    [**Windows**](https://oss.jfrog.org/artifactory/oss-release-local/com/epam/drill/autotest/autoTestAgent-mingwX64/0.4.0/autoTestAgent-mingwX64-0.4.0.zip)
     > Download by [maven or gradle plugin](/autotest-agent-guide/)
  
  
@@ -25,6 +25,6 @@ permalink: /stable-versions/
       > Download automatically.   
         Please set TEST2CODE_PLUGIN_VERSION env variable for admin back-end.                                                                                                        
 
-* **browser extension**: [**0.3.13**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13)
+* **browser extension**: [**0.3.15**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.15)
 
                                                                                                            

@@ -49,7 +49,7 @@ services:
       - JAVA_TOOL_OPTIONS="-agentpath:/data/libdrill_agent.so=drillInstallationDir=/data,adminAddress=localhost:8090,agentId=ExampleAgentId,buildVersion=0.1.0"
 
   agent-files:
-    image: drill4j/java-agent:0.5.0
+    image: drill4j/java-agent:0.6.0
     volumes:
       - agent-files:/java-agent
 
@@ -63,7 +63,7 @@ volumes:
 
 
 ### 3.2 If you use jar for running you can download the archive with the agent distribution for your OS:    
-[**java-agent**](https://github.com/Drill4J/java-agent/releases/tag/v0.5.0) and extract files.
+[**java-agent**](https://github.com/Drill4J/java-agent/releases/tag/v0.6.0) and extract files.
 #### and start application with follow parameters
 
 > (example for Windows):
@@ -92,7 +92,7 @@ Press "Register" button and follow registration wizards steps:
   * 2nd step. Configure all necessary packages of your application
   * 3rd step. Add **Test2code** plugin
   
-#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.13) and install the browser extension for manual testing.
+#### Download [**drill-browser-extension**](https://github.com/Drill4J/browser-extension/releases/tag/v0.3.15) and install the browser extension for manual testing.
   
 ## Also, if you want to try auto tests, follow this instruction:
 #### [Using auto tests agent](/autotest-agent-guide/)
