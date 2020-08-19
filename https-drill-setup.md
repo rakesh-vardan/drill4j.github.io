@@ -23,7 +23,8 @@ For example, full docker-compose file looks like:
 version: '3'
 
 services:
-ssl-proxy-admin:
+
+  ssl-proxy-admin:
     image: drill4j/ssl-proxy:0.1.0
     ports:
       - 8443:8443
@@ -34,7 +35,7 @@ ssl-proxy-admin:
       TARGET_PORT: 8080
     networks:
           - drill4j-dev-network
-
+          
   drill-admin:
     image: drill4j/admin:0.6.0
     environment:
